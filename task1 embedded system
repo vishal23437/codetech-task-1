@@ -1,0 +1,13 @@
+Components Required:
+
+1.Arduino Uno
+
+2.LM35/DS18B20 Temperature Sensor
+
+3.16x2 LCD with I2C or Serial Monitor
+
+Circuit connection:
+
+Connect LM35: Vcc → 5V, GND → GND, OUT → A0
+
+LCD via I2C: SDA → A4, SCL → A5

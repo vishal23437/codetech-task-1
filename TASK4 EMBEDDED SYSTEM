@@ -1,0 +1,21 @@
+1.Using Voice Recognition Module V3
+
+2.Train voice commands (like “ON”/”OFF”) on the module
+
+Connect via Serial and use:
+
+
+const int relayPin = 7;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(relayPin, OUTPUT);
+}
+
+void loop() {
+  if (Serial.available()) {
+    int command = Serial.read();
+    if (command == 0x11) digitalWrite(relayPin, HIGH); // Trained cmd 1
+    else if (command == 0x12) digitalWrite(relayPin, LOW); // Trained cmd 2
+  }
+}

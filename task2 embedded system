@@ -1,0 +1,15 @@
+Components required:
+
+1.Arduino Uno
+
+2.HC-05 Bluetooth Module
+
+3.Relay Module
+
+4.LED/Bulb
+
+Circuit connection:
+
+HC-05: Vcc → 5V, GND → GND, TX → RX, RX → TX
+
+Relay IN → D7, VCC → 5V, GND → GND
